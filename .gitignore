@@ -8,7 +8,6 @@
 /build
 /captures
 .cxx
-local.properties
 # Created by https://www.toptal.com/developers/gitignore/api/macos,windows,androidstudio,gradle
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,androidstudio,gradle
 
