@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Hw03_GymLog</string>
+    <string name="exercise">Exercise</string>
+    <string name="enter_an_exercise">Enter an Exercise</string>
+    <string name="weight">Weight</string>
+    <string name="enter_a_weight">Enter a Weight</string>
+    <string name="enter_reps">Enter reps</string>
+    <string name="reps">Reps</string>
+    <string name="log">Log!</string>
+    <string name="nothing_to_show_time_to_hit_the_gym">Nothing to show, time to hit the gym!</string>
 </resources>
