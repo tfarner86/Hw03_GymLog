@@ -1,12 +1,12 @@
-package com.example.hw03_gymlog.Database.Entities;
+package com.example.hw03_gymlog.database.Entities;
 
 import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-import com.example.hw03_gymlog.Database.GymLogDatabase;
+import com.example.hw03_gymlog.database.GymLogDatabase;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 // POJO: Plain old java object; represents a piece of information
@@ -18,13 +18,23 @@ public class GymLog {
     private String exercise;
     private double weight;
     private int reps;
-    private LocalDate date;
+    private LocalDateTime date;
 
     public GymLog(String exercise, double weight, int reps) {
         this.exercise = exercise;
         this.weight = weight;
         this.reps = reps;
-        date = LocalDate.now();
+        date = LocalDateTime.now();
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return exercise + '\n' +
+                "weight=" + weight + '\n' +
+                "reps=" + reps + '\n' +
+                "date=" + date + '\n' +
+                "=-=-=-=-=-=\n";
     }
 
     @Override
@@ -71,11 +81,11 @@ public class GymLog {
         this.reps = reps;
     }
 
-    public LocalDate getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 }
